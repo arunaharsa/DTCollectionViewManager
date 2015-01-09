@@ -96,6 +96,8 @@
                                                                    bundle:nil]
                          forSupplementaryViewOfKind:kind
                                 withReuseIdentifier:supplementaryClassString];
+    } else{
+        [[self.delegate collectionView] registerClass:supplementaryClass forSupplementaryViewOfKind:kind withReuseIdentifier:supplementaryClassString];
     }
     [self setSupplementaryClass:supplementaryClass
                         forKind:kind
